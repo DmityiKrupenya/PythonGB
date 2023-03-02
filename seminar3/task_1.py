@@ -1,0 +1,7 @@
+n = int(input("Введите количество элементов первого множества: "))
+set_1 = set(int(input()) for i in range(n))
+print("Первое множество", set_1)
+m = int(input("Введите количество элементов первого множества: "))
+set_2 = set(int(input()) for i in range(m))
+print("Второе множество", set_2)
+print("Отсортированное множество: ", *sorted(set_1 | set_2))
